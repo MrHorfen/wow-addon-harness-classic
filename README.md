@@ -3,10 +3,15 @@
 **人人都能做魔兽插件。 / Anyone can build WoW addons.**
 
 A test-first development harness for World of Warcraft add-ons that must run on
-both **Classic Era 1.15.x** (Interface `11509`) and a **1.60.x modern Auction
-House client** (Interface `16001`).
+both **Classic Era 1.15.x** (Interface `11509`, legacy Auction House) and a
+**1.60.x modern Auction House client** (Interface `16001`).
 
 One source tree. Two client flavors. No `if client then` branches in business code.
+
+This is the dual-client tree: the legacy Auction House of Classic Era 1.15 and
+the modern Auction House of the 1.60 client. It does not claim that Classic Era
+uses the modern AH. The single-client Retail 12.x tree lives in the companion
+repository.
 
 > Building for **Retail 12.x** instead? That tree has a single modern client and
 > lives in the companion repository, **wow-addon-harness-retail**.
@@ -31,6 +36,9 @@ One source tree. Two client flavors. No `if client then` branches in business co
   mock 跑行为级测试，专抓 nil 崩溃、返回值形状错误和事件注册错误。
 - **门禁 + 打包**：一条命令检查 toc、越层、版本、LF/BOM、敏感信息，并打出
   Legacy / Modern 两个安装包。
+
+一句话分清：本仓是“老 AH + 现代 AH”的双客户端试验台。经典旧世 1.15 走老拍卖行，
+1.60 客户端走现代拍卖行；正式服 12.x 的单客户端版本在 Retail 仓库。
 
 ### 为什么叫 Harness
 
