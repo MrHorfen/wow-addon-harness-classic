@@ -17,6 +17,13 @@ repository.
 > lives in the companion repository, **wow-addon-harness-retail**.
 >
 > 如果你做的是**正式服 12.x**，请使用配套仓库 **wow-addon-harness-retail**。
+>
+> Using a **1.60.x modern-Auction-House client**? You are in the right tree: use
+> the `modern` flavor. The Retail repository is a separate 12.x tree and is not a
+> drop-in replacement for 1.60.
+>
+> 如果你用的是 **1.60.x 现代拍卖行客户端**，就是本仓的 `modern` flavor，不需要去
+> Retail 仓。Retail 仓是另一棵正式服 12.x 的树，不能直接拿来套 1.60。
 
 [中文](#中文) · [English](#english)
 
